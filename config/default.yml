@@ -6,9 +6,19 @@ Doctolib/NoAsymmetricalPunditAfterActions:
   Enabled: true
   VersionAdded: 0.1.0
 
+Doctolib/NoUnsafeBackgroundMigration:
+  Description: Flag migrations which alter the “shape” of the schema.
+  Enabled: true
+  VersionAdded: 0.1.0
+  Include:
+    - db/migrate-background/**/*.rb
+
 Doctolib/OneOperationPerMigration:
   Description: >
     Flag ActiveRecord database migrations which contain more than one
     operation.
   Enabled: true
   VersionAdded: 0.1.0
+  Include:
+    - db/migrate/**/*.rb
+    - db/migrate-background/**/*.rb

@@ -3,3 +3,4 @@
 - Initial release.
 - Add the Doctolib/NoAsymmetricalPunditAfterActions cop.
 - Add the Doctolib/OneOperationPerMigration cop.
+- Add the Doctolib/NoUnsafeBackgroundMigration cop.
