@@ -1,2 +1,3 @@
 # frozen_string_literal: true
 require_relative 'doctolib/no_asymmetrical_pundit_after_actions'
+require_relative 'doctolib/one_operation_per_migration'
