@@ -1,1 +1,9 @@
 # Write it!
+
+Doctolib/NoAsymmetricalPunditAfterActions:
+  Description: >
+    Flag pairs of `after_action :verify_authorized` and `after_action
+    :verify_policy_scoped` which potentially let some actions covered by
+    neither filter.
+  Enabled: true
+  VersionAdded: 0.1.0
