@@ -20,5 +20,4 @@ Doctolib/OneOperationPerMigration:
   Enabled: true
   VersionAdded: 0.1.0
   Include:
-    - db/migrate/**/*.rb
-    - db/migrate-background/**/*.rb
+    - db/migrate*/**/*.rb
