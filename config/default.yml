@@ -11,7 +11,7 @@ Doctolib/NoUnsafeBackgroundMigration:
   Enabled: true
   VersionAdded: 0.1.0
   Include:
-    - db/migrate-background/**/*.rb
+    - db/migrate-*-background/**/*.rb
 
 Doctolib/OneOperationPerMigration:
   Description: >
