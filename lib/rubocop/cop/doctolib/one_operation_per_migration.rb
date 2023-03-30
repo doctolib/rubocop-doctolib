@@ -24,30 +24,49 @@ module RuboCop
 
         # From: https://api.rubyonrails.org/classes/ActiveRecord/Migration.html
         def_node_matcher(:migration_symbol?, <<~PATTERN)
-          {
-            :create_join_table
-            :create_table
+           {
+            :add_check_constraint
             :add_column
+            :add_columns
             :add_foreign_key
             :add_index
+            :add_index
+            :add_index_options
             :add_reference
             :add_timestamps
             :change_column
+            :change_column_comment
             :change_column_default
             :change_column_null
             :change_table
-            :rename_column
-            :rename_index
-            :rename_table
-            :drop_table
+            :change_table_comment
+            :check_constraints
+            :create_join_table
+            :create_table
+            :disable_extension
             :drop_join_table
+            :drop_schema
+            :drop_table
+            :enable_extension
+            :execute
+            :execute_block
+            :remove_check_constraint
             :remove_column
             :remove_columns
             :remove_foreign_key
             :remove_index
             :remove_reference
             :remove_timestamps
-            :execute
+            :rename_column
+            :rename_index
+            :rename_table
+            :reset_pk_sequence!
+            :set_pk_sequence!
+            :transaction
+            :update_table_definition
+            :validate_check_constraint
+            :validate_constraint
+            :validate_foreign_key
           }
         PATTERN
 
