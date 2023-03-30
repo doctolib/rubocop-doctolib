@@ -24,12 +24,11 @@ module RuboCop
 
         # From: https://api.rubyonrails.org/classes/ActiveRecord/Migration.html
         def_node_matcher(:migration_symbol?, <<~PATTERN)
-           {
+          {
             :add_check_constraint
             :add_column
             :add_columns
             :add_foreign_key
-            :add_index
             :add_index
             :add_index_options
             :add_reference
@@ -45,7 +44,6 @@ module RuboCop
             :create_table
             :disable_extension
             :drop_join_table
-            :drop_schema
             :drop_table
             :enable_extension
             :execute
@@ -62,7 +60,6 @@ module RuboCop
             :rename_table
             :reset_pk_sequence!
             :set_pk_sequence!
-            :transaction
             :update_table_definition
             :validate_check_constraint
             :validate_constraint
