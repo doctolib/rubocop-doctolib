@@ -58,8 +58,6 @@ module RuboCop
             :rename_column
             :rename_index
             :rename_table
-            :reset_pk_sequence!
-            :set_pk_sequence!
             :update_table_definition
             :validate_check_constraint
             :validate_constraint
